@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .border{
+            height: 50px;
+            width: 50px;
+            margin: 5px;
+            padding: 5px;
+        }
+        #First{
+            border: 5px dotted red;
+            background-color: chartreuse;
+            border-radius: 10px;
+             }
+        #Second{
+            border: 10px solid forestgreen;
+            background-color: crimson;
+            border-radius: 5px 5px 5px 5px;
+        }
+        #first{ box-sizing: border-box;}
+        #Second{ box-sizing: content-box;}
+    </style>
+</head>
+<body>
+    <div id="First" class="border">border</div>
+    <div id="Second" class="border">border</div>
+</body>
+</html>
