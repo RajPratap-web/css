@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox justify</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            margin: 5px;
+            box-sizing: content-box;
+        }
+        #heading{
+            margin-left: 200px;
+        }
+        #container1{
+            height: 600px;
+            width: 600px;
+            background-color: blanchedalmond;
+            border: 5px dashed black;
+            margin: 5px;
+            padding: 5px;
+
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        #box1{
+            background-color: aqua;
+
+        }
+        #box2{
+            background-color: blueviolet;
+        }
+        #box3{
+            background-color: chocolate;
+        }
+        #box4{
+            background-color: crimson;
+        }
+        #box5{
+            background-color: aqua;
+
+        }
+        #box6{
+            background-color: blueviolet;
+        }
+        #box7{
+            background-color: chocolate;
+        }
+        #box8{
+            background-color: crimson;
+        }
+        #boxs{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            margin: 5px;
+            box-sizing: content-box;
+        }
+        .boxs{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            margin: 5px;
+            box-sizing: content-box;
+        }
+       #container2{
+            height: 600px;
+            width: 600px;
+            background-color: blanchedalmond;
+            border: 5px dashed black;
+            margin: 5px;
+            padding: 5px;
+
+            display: flex;
+            justify-content: space-between;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">flexbox container justify</h1>
+    <div id="container1">
+        <div id="box1" class="box">box1</div>
+        <div id="box2" class="box">box2</div>
+        <div id="box3" class="box">box3</div>
+        <div id="box4" class="box">box4</div>
+    </div>
+    <div id="container2">
+    <div id="box5" class="boxs">box5</div>
+        <div id="box6" class="boxs">box6</div>
+        <div id="box7" class="boxs">box7</div>
+        <div id="box8" class="boxs">box8</div>
+        </div>
+</body>
+</html>

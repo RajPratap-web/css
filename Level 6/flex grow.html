@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex flex-grow</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #container{
+            width: 300px;
+            height: 300px;
+            margin: 20px;
+            padding: 10px;
+            border: 5px dashed black;
+            color: aliceblue;
+            background-color: aqua;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            margin: 5px;
+           
+            
+        }
+        #heading{
+            margin-left: 200px;
+        }
+        #box1{
+          color: antiquewhite;
+          background-color: blueviolet;
+
+        }
+        #box2{
+          color: antiquewhite;
+          background-color: brown;
+          flex-grow: 3;
+        }
+        #box3{
+          color: antiquewhite;
+          background-color: chartreuse;
+          
+        }
+        #box4{
+          color: antiquewhite;
+          background-color: crimson;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="heading">flex shrink</h1>
+    <div id="container">
+        <div id="box1" class="box" >box1</div>
+        <div id="box2" class="box" >box2</div>
+        <div id="box3" class="box" >box3</div>
+        <div id="box4" class="box" >box4</div>
+    </div>
+</body>
+</html>
